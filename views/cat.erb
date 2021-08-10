@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-<% if @name == nil%>
-<form action= '/named-cat'> <input type='text'name='name'> 
-<input type='submit'value='Submit'></form>
-<% end %> 
 
 <h1>"My name is <%= @name %>"</h1>
 <h1>"My colour is <%= @colour %>"</h1>
+
 <img src='http://placekitten.com/500/500' style='border: 4px red dotted'>

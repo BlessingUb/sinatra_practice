@@ -1,8 +1,6 @@
 require 'sinatra'
 require "sinatra/reloader" if development?
 
-
-
 get '/' do
   erb :index
 end
@@ -22,10 +20,14 @@ get '/random-cat' do
   erb :cat
 end
 
-get '/named-cat' do
+post '/named-cat' do
   p params
   @name = params[:name]
   @colour = params[:colour]
 
   erb :cat
+end
+
+get '/cat-form' do
+  erb :catform
 end
