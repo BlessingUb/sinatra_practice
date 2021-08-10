@@ -1,8 +1,7 @@
 require 'sinatra'
 require "sinatra/reloader" if development?
 
-# set :root, File.dirname(__FILE__)
-# set :views, "#{settings.root}/../views"
+
 
 get '/' do
   erb :index
